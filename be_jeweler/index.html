@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Be Jeweler!</title>
+</head>
+<body>
+  <div class="header">
+    
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" onclick="darkLight()" />
+      <div class="slider round"></div>
+    </label>
+      <em id="dark-em">Enable Dark Mode!</em>
+    </div>
+    
+    <p class="title">Be Jeweler</p>
+  </div>
+
+  <div class="main">
+    
+    <div class="game-container" id="game-container"></div>
+
+    <div class="score-container">
+      <p class="pScore">Score:</p>
+      <p class="score" id="ScoreViewer">0000</p>
+    </div>
+
+    <div class="test">
+      <div class="divtest" id="div1"></div>
+      <div class="divtest" id="div2"></div>
+    </div>
+  </div>
+  
+  <script src="./GameImpl.js"></script>
+  <script src="./DarkMode.js"></script>
+  
+</body>
+</html>
